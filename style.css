@@ -291,9 +291,8 @@ nav ul li a:active
 
 
 .bubbles{
-    margin-top: 2em;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 2em auto;
     
 }
 
