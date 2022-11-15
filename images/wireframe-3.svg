@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="419" height="741" viewBox="0 0 419 741">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9a73a1"/>
+      <stop offset="1" stop-color="#4d3a51"/>
+    </linearGradient>
+    <clipPath id="clip-Artboard_3">
+      <rect width="419" height="741"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_3" data-name="Artboard – 3" clip-path="url(#clip-Artboard_3)">
+    <g id="wireframe-3" transform="translate(526 -134)">
+      <g id="phone" transform="translate(-526 136)">
+        <g id="outisde" transform="translate(8)" stroke="#4d3a51" stroke-width="3" fill="url(#linear-gradient)">
+          <rect width="405" height="738" rx="52" stroke="none"/>
+          <rect x="1.5" y="1.5" width="402" height="735" rx="50.5" fill="none"/>
+        </g>
+        <g id="btn-top" transform="translate(0 149)" stroke="#4d3a51" stroke-width="3" fill="url(#linear-gradient)">
+          <path d="M7,0h4a0,0,0,0,1,0,0V56a0,0,0,0,1,0,0H7a7,7,0,0,1-7-7V7A7,7,0,0,1,7,0Z" stroke="none"/>
+          <path d="M7,1.5H9.5a0,0,0,0,1,0,0v53a0,0,0,0,1,0,0H7A5.5,5.5,0,0,1,1.5,49V7A5.5,5.5,0,0,1,7,1.5Z" fill="none"/>
+        </g>
+        <g id="btn-bottom" transform="translate(0 218)" stroke="#4d3a51" stroke-width="3" fill="url(#linear-gradient)">
+          <path d="M7,0h4a0,0,0,0,1,0,0V56a0,0,0,0,1,0,0H7a7,7,0,0,1-7-7V7A7,7,0,0,1,7,0Z" stroke="none"/>
+          <path d="M7,1.5H9.5a0,0,0,0,1,0,0v53a0,0,0,0,1,0,0H7A5.5,5.5,0,0,1,1.5,49V7A5.5,5.5,0,0,1,7,1.5Z" fill="none"/>
+        </g>
+        <g id="btn-right" transform="translate(410 167)" stroke="#4d3a51" stroke-width="3" fill="url(#linear-gradient)">
+          <rect width="10" height="90" stroke="none"/>
+          <rect x="1.5" y="1.5" width="7" height="87" fill="none"/>
+        </g>
+        <line id="Line_10" data-name="Line 10" x2="54" transform="translate(184.5 15.5)" fill="none" stroke="#050505" stroke-linecap="round" stroke-width="3"/>
+        <rect id="inside" width="375" height="681.366" rx="21" transform="translate(23 26.817)" fill="#fff"/>
+      </g>
+      <g id="Group_15" data-name="Group 15" transform="translate(-495.443 234)">
+        <g id="Item" transform="translate(0.5 41)">
+          <g id="img">
+            <rect id="Rectangle_3" data-name="Rectangle 3" width="105" height="105" rx="5" fill="#afecfe"/>
+            <line id="Line_1" data-name="Line 1" x2="102.566" y2="101.267" transform="translate(0.432 2.162)" fill="none" stroke="#707070" stroke-width="1"/>
+            <line id="Line_2" data-name="Line 2" y1="101.267" x2="101.702" transform="translate(1.297 2.162)" fill="none" stroke="#707070" stroke-width="1"/>
+          </g>
+        </g>
+        <text id="Checkout" transform="translate(2.5 24)" font-size="23" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Checkout</tspan></text>
+        <line id="Line_6" data-name="Line 6" x2="357.387" transform="translate(0 159.065)" fill="none" stroke="#707070" stroke-width="1"/>
+        <text id="Product_Name_" data-name="Product Name
+
+" transform="translate(161.66 57)" font-size="21" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Product Name</tspan><tspan x="0" y="1"></tspan><tspan x="0" y="2"></tspan></text>
+        <g id="Quantity" transform="translate(165.887 90.875)">
+          <g id="Qty_input" data-name="Qty input" transform="translate(0 28)">
+            <g id="qty_input-2" data-name="qty input" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="84" height="28" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="83" height="27" rx="4.5" fill="none"/>
+            </g>
+            <text id="_-" data-name="-" transform="translate(7 18)" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">-</tspan></text>
+            <text id="_" data-name="+" transform="translate(69 18)" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">+</tspan></text>
+            <text id="_1" data-name="1" transform="translate(38 18)" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">1</tspan></text>
+          </g>
+          <text id="Dozen" transform="translate(0 17)" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Dozen</tspan></text>
+          <text id="_X.XX" data-name="$X.XX" transform="translate(107 50)" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">$X.XX</tspan></text>
+        </g>
+        <g id="Total" transform="translate(7.5 171.445)">
+          <text id="Subtotal:" transform="translate(0 16)" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Subtotal:</tspan></text>
+          <text id="Estimated_Tax:" data-name="Estimated Tax:" transform="translate(0 46)" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Estimated Tax:</tspan></text>
+          <text id="Total:_" data-name="Total: " transform="translate(0 108)" font-size="19" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Total: </tspan></text>
+          <text id="_X.XX-2" data-name="$X.XX" transform="translate(300.387 109)" font-size="15" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">$X.XX</tspan></text>
+          <text id="Delivery_Fee:" data-name="Delivery Fee:" transform="translate(0 77)" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Delivery Fee:</tspan></text>
+          <text id="_X.XX-3" data-name="$X.XX" transform="translate(300.387 77)" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">$X.XX</tspan></text>
+          <text id="_X.XX-4" data-name="$X.XX" transform="translate(300.387 46)" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">$X.XX</tspan></text>
+          <text id="_X.XX-5" data-name="$X.XX" transform="translate(300.387 16)" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">$X.XX</tspan></text>
+        </g>
+        <path id="Path_1" data-name="Path 1" d="M0,0H357.387" transform="translate(0 296.93)" fill="none" stroke="#707070" stroke-width="1"/>
+        <g id="Purchase_Form" data-name="Purchase Form" transform="translate(0.5 315.741)">
+          <g id="input" transform="translate(0)">
+            <g id="box" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="357.387" height="35" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="356.387" height="34" rx="4.5" fill="none"/>
+            </g>
+            <text id="Name" transform="translate(12 23.941)" fill="#707070" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Name</tspan></text>
+          </g>
+          <g id="input-2" data-name="input" transform="translate(0 88)">
+            <g id="box-2" data-name="box" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="177" height="35" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="176" height="34" rx="4.5" fill="none"/>
+            </g>
+            <text id="Address" transform="translate(11 23.5)" fill="#707070" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Address</tspan></text>
+          </g>
+          <g id="input-3" data-name="input" transform="translate(0 141)">
+            <g id="box-3" data-name="box" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="357.387" height="35" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="356.387" height="34" rx="4.5" fill="none"/>
+            </g>
+            <text id="Credit_Card_Number" data-name="Credit Card Number" transform="translate(11 23.941)" fill="#707070" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Credit Card Number</tspan></text>
+          </g>
+          <g id="input-4" data-name="input" transform="translate(0 185)">
+            <g id="box-4" data-name="box" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="80" height="35" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="79" height="34" rx="4.5" fill="none"/>
+            </g>
+            <text id="MM_YY" data-name="MM/YY" transform="translate(10 23.059)" fill="#707070" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">MM/YY</tspan></text>
+          </g>
+          <g id="input-5" data-name="input" transform="translate(91.051 185)">
+            <g id="box-5" data-name="box" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="80" height="35" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="79" height="34" rx="4.5" fill="none"/>
+            </g>
+            <text id="CVC" transform="translate(10 23.059)" fill="#707070" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">CVC</tspan></text>
+          </g>
+          <g id="input-6" data-name="input" transform="translate(193.467 88)">
+            <g id="box-6" data-name="box" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="73" height="35" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="72" height="34" rx="4.5" fill="none"/>
+            </g>
+            <text id="City" transform="translate(11 23.941)" fill="#707070" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">City</tspan></text>
+          </g>
+          <g id="input-7" data-name="input" transform="translate(277.387 88)">
+            <g id="box-7" data-name="box" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="80" height="35" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="79" height="34" rx="4.5" fill="none"/>
+            </g>
+            <text id="Zip_Code" data-name="Zip Code" transform="translate(10 21.941)" fill="#707070" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Zip Code</tspan></text>
+          </g>
+          <g id="input-8" data-name="input" transform="translate(0 44)">
+            <g id="box-8" data-name="box" fill="#fff" stroke="#707070" stroke-width="1">
+              <rect width="357.387" height="35" rx="5" stroke="none"/>
+              <rect x="0.5" y="0.5" width="356.387" height="34" rx="4.5" fill="none"/>
+            </g>
+            <text id="Email" transform="translate(12 23.941)" fill="#707070" font-size="15" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Email</tspan></text>
+          </g>
+        </g>
+        <g id="Submit_btn" data-name="Submit btn" transform="translate(114.211 560.741)">
+          <rect id="Rectangle_3-2" data-name="Rectangle 3" width="130" height="40" rx="5" fill="#afecfe"/>
+          <text id="Purchase" transform="translate(27.491 27)" font-size="18" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Purchase</tspan></text>
+        </g>
+        <g id="Nav" transform="translate(20.443 -45)">
+          <text id="RO_S_BAGELS" data-name="RO&apos;S BAGELS" transform="translate(0 17)" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">RO&apos;S BAGELS</tspan></text>
+          <g id="Burger" transform="translate(299 2.376)">
+            <line id="Line_3" data-name="Line 3" x2="28" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_4" data-name="Line 4" x2="28" transform="translate(0 18.624)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_5" data-name="Line 5" x2="28" transform="translate(0 9.312)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
