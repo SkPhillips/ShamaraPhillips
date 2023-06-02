@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
+/**** mobile first ****/
 
 * {
     box-sizing: border-box;
@@ -20,15 +20,6 @@ body {
     background-color: #16111f;
     text-align: center;
     border: 0;
-}
-
-header {
-    height: 60px;
-    width: 100%;
-    background-color: #0A070F;
-    border-top: #8258A2 1px solid;
-    position: fixed;
-    z-index: 3;
 }
 
 
@@ -75,6 +66,7 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
+    line-height: 1.2em;
 }
 
 h3 {
@@ -107,7 +99,7 @@ span {
 .sub-heading {
     font-family: Playfair, serif;
     font-weight: 500;
-    margin-top: 2em;
+    margin-top: 3.5em;
 
 }
 
@@ -140,27 +132,7 @@ p {
     font-style: normal;
 }
 
-.nav-ul {
-    padding: .5em;
-    font-weight: bold;
 
-}
-
-.nav-desktop {
-    display: flex;
-    margin-top: 0;
-    padding: 0;
-    justify-content: flex-end;
-    font-size: 1.2rem;
-    display: none;
-}
-
-li {
-    margin: 1em;
-    list-style: none;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
-}
 
 
 .larger-text {
@@ -178,100 +150,141 @@ label {
 
 /* Navigation */
 
-
-nav {
-    position: fixed;
-    z-index: 10;
-    background: linear-gradient(0deg, #8f4dad 0%, rgb(186, 153, 239) 100%);
-    right: 0;
-    top: 0;
-    max-width: 300px;
-    visibility: hidden;
-    transform: translateX(50%);
-    opacity: 0;
-    transition: all .3s;
-    text-align: center;
-    color: #ffff;
-}
-
-
-nav p {
-    margin-bottom: 0;
-}
-
-nav svg {
-    cursor: pointer;
-    width: 1em;
-}
-
-nav ul li a {
-    display: block;
-    font-size: 1.2em;
-    padding: .8em 1em;
-    font-weight: bold;
-}
-
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a:active {
-    box-shadow: inset 1.5px 1.5px 4.5px rgb(186, 153, 239),
-        inset -4.5px -4.5px 9.5px #ffffff73;
-    border-radius: 50px;
-    width: 200px;
-    margin: 0 auto;
-}
-
-
-.selected {
-    background: #ffffff;
-}
-
-.open-nav {
-    visibility: unset;
-    opacity: 1;
-    transform: translateX(0);
-}
-
-#exit-btn {
-    float: right;
-    margin: 1em 1em .5em 0;
-    width: 1.8em;
-    color: #ffff;
-    border-bottom: solid 1px rgb(255, 255, 255);
-    font-size: 1rem;
-}
-
-
-.name {
-    font-size: 2rem;
-}
-
-.descript {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: rgb(85, 69, 15);
-    margin-bottom: 2.8em;
-}
-
-.icons {
-    margin: .5em;
-    background-color: black;
+/* Desktop Nav */
+nav{
     display: flex;
-    justify-content: center;
-    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #0A070F;
+    position: fixed;
+    border-top: #8258A2 1px solid;
+    /* overflow: hidden; */
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-.icon {
-    color: rgb(207, 172, 207);
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.icons a {
-    margin: 1em;
+.nav-links li {
+    list-style: none;
+    margin-right: 2em;
 }
 
-.icons a:hover,
-.icons a:focus {
-    color: #8258A2;
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.nav-links a:active {
+    color: #876B9B;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    color: #b087cc;
+
+}
+
+.logo img {
+    width: 60px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger > div {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* END Desktop Nav */
+
+@media screen and (max-width: 1024px) {
+    nav-links{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo img {
+        width: 40px;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 51vh;
+        top: 6vh;
+        background-color: #0A070F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 100;
+
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes navLinkFadeOut{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(+45deg) translate(-5px, -5px);
 }
 
 /****** Main Section ******/
@@ -283,13 +296,12 @@ nav ul li a:active {
 
 .intro {
     margin: 1.2em auto;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 0 1.3em;
 }
 
 
 .bubble-1 li {
-    color: #f3dffc;
     margin: .5em;
 }
 
@@ -312,15 +324,16 @@ nav ul li a:active {
 .bubble-1-li-move {
     position: relative;
     left: 2em;
-    color: #f3dffc;
 }
 
 .bubble-1-li-move-1 {
     position: relative;
     left: 1em;
-    color: #f3dffc;
 }
 
+.bubble-1-li-move-1, .bubble-1 li, .bubble-1-li-move {
+    color: rgb(199, 149, 232);
+}
 
 .bubbles {
     max-width: 500px;
@@ -337,7 +350,6 @@ nav ul li a:active {
 
 .bubble-1 {
     background-color: rgba(106, 23, 145, .5);
-    border: solid 1px #d187f3;
     margin-left: -10em;
     display: inline-block;
 }
@@ -360,13 +372,13 @@ nav ul li a:active {
 }
 
 .fa-check-square {
-    color: #E9C7F9;
+    color: rgb(169, 115, 206);
 }
 
 
 .bubble-2 {
     background-color: rgba(209, 135, 243, .5);
-    border: solid 1px #E9C7F9;
+    /* border: solid 1px #E9C7F9; */
     position: relative;
     left: 9em;
     bottom: 15.3em;
@@ -426,20 +438,19 @@ nav ul li a:active {
 .bubble-2-li-move-1,
 .bubble-2-li-move,
 .bubble-2 li {
-    color: #240f32;
+    color: #281138;
 }
 
 
 .bubble-2 p {
     margin: 0 auto;
-    color: #16111f;
-    font-weight: 700;
-    font-size: 1.7rem;
+    color: #0A070F;
+    font-weight: 600;
+    font-size: 1.8rem;
     position: relative;
     right: 2.2em;
     bottom: 7em;
 }
-
 
 
 .about {
@@ -579,7 +590,7 @@ button:focus {
     margin-top: 1.5em;
     margin-bottom: .5em;
     font-size: 1.3rem;
-    font-family: verdana, arial, helvetica, sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     text-align: left;
 }
@@ -587,7 +598,11 @@ button:focus {
 .overlay ul {
     text-align: left;
     padding: 0;
-    margin: 0;
+    margin: 1em 0;
+}
+
+.overlay li {
+    margin: .5em;
 }
 
 
@@ -603,6 +618,7 @@ button:focus {
 .fa-circle {
     color: #3b294a;
     font-size: 1rem;
+    margin-left: 1em;
 }
 
 .dot-css {
@@ -674,13 +690,10 @@ button:focus {
     margin: 2em auto;
 }
 
-.project-info {
-    font-size: 1.365rem;
-    padding: 0 .4em;
-    max-width: 800px;
+.project-intro p{
+    font-family: Playfair, serif;
+    font-size: 2.2rem;
 }
-
-
 
 .carousel {
     max-width: 620px;
@@ -691,6 +704,7 @@ button:focus {
 .carousel .carousel-item,
 .carousel .carousel-item-hidden {
     display: none;
+    padding: 1em;
 }
 
 .carousel .carousel-item-visible {
@@ -768,7 +782,7 @@ button:focus {
 
 iframe {
     border-radius: 20px;
-    border: solid 1px rgb(154, 115, 161);
+    border: solid 1px rgb(220, 218, 220);
     margin: 0 auto;
 }
 
@@ -788,8 +802,9 @@ iframe {
 }
 
 .projects {
-    max-width: 1000px;
-    margin: 4em auto;
+    max-width: 1200px;
+    margin: -4em auto;
+    padding: 1em;
 }
 
 .project-1,
@@ -797,7 +812,8 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 2em;
+    margin-top: 6em;
+    /* margin-left: 1em; */
     text-align: left;
 }
 
@@ -806,6 +822,7 @@ iframe {
     text-align: left;
     max-width: 500px;
     padding-right: 2em;
+    letter-spacing: 1.5px;
 }
 
 .project-title p {
@@ -828,6 +845,7 @@ iframe {
     transition: transform .6s;
     width: 500px;
     margin: 0 auto;
+    padding: 1.3em;
 }
 
 .project-img img:hover {
@@ -932,6 +950,8 @@ iframe {
 .form-intro p {
     letter-spacing: 1px;
     font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
 
 }
 
@@ -955,6 +975,8 @@ iframe {
     padding: 1em 0;
     font-size: 1rem;
     border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
     margin: 1.5em;
     border: solid 2px #000000;
     box-shadow: inset 1px 0px 4px rgb(186, 153, 239),
@@ -1016,6 +1038,7 @@ iframe {
     text-align: left;
     padding: 0 1em;
     font-size: 1.5rem;
+    letter-spacing: 2px;
 }
 
 .intro-container {
@@ -1091,7 +1114,7 @@ iframe {
     max-width: 1200px;
     margin: auto;
     padding: 1em;
-    background-color: #0A070F;
+    background-color: rgb(220, 218, 220);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -1160,6 +1183,16 @@ footer {
 }
 
 /****Media Queries****/
+
+@media (min-width: 510px) {
+
+    .projects{
+        margin: 4em auto;
+    }
+    .projects, .project-img img  {
+    padding: 0;
+}
+}
 
 @media (min-width: 700px) {
 
@@ -1304,10 +1337,6 @@ footer {
         right: .85em;
     }
 
-    .project-info {
-        font-size: 1.8rem;
-    }
-
 }
 
 @media (min-width: 770px) {
@@ -1326,6 +1355,7 @@ footer {
     .wireframes h3 {
         margin-top: 2.5em;
     }
+    
 }
 
 @media (min-width: 900px) {
@@ -1340,28 +1370,6 @@ footer {
         font-size: 2.9rem;
     }
 
-    nav {
-        height: 40vh;
-    }
-
-    .nav-ul {
-        display: none;
-    }
-
-    .nav-desktop {
-        display: block;
-        display: flex;
-    }
-
-    .nav-desktop li a {
-        padding: 0em 1em;
-    }
-
-    .nav-desktop li a:hover {
-        box-shadow: inset 1.5px 1.5px 4.5px rgb(186, 153, 239),
-            inset -4.5px -4.5px 9.5px #ffffff4d;
-        border-radius: 50px;
-    }
 
     .icons {
         display: flex;
@@ -1394,11 +1402,7 @@ footer {
     .wireframes h3 {
         margin-top: 2.5em;
     }
-
-    .project-info {
-        font-size: 1.8rem;
-        margin: 0 auto 2em auto;
-    }
+    
 
 
 }
@@ -1476,7 +1480,9 @@ footer {
         bottom: 9em;
         font-size: 2rem;
     }
-
+    .project-img img {
+        margin-right: 1em;
+    }
 }
 
 
