@@ -593,6 +593,8 @@ button:focus {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .overlay ul {
@@ -846,6 +848,8 @@ iframe {
     width: 500px;
     margin: 0 auto;
     padding: 1.3em;
+    box-shadow: 0 0 18px 3px rgb(154, 115, 161);
+    border-radius: 8px;
 }
 
 .project-img img:hover {
@@ -858,6 +862,7 @@ iframe {
     padding-top: 0;
     text-align: center;
     color: #88848D;
+    font-size: 1rem;
 }
 
 
