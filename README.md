@@ -1,2 +1,2 @@
 PORTFOLIO
-https://skphillips.github.io/ShamaraPhillips/
+https://www.shamaraphillips.com
