@@ -720,7 +720,7 @@ iframe {
 
 .project-img img {
     transition: transform .6s;
-    width: 500px;
+    width: 450px;
     margin: 0 auto;
     padding: 1.3em;
     box-shadow: 0 0 8px 1px var(--grey);
