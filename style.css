@@ -384,7 +384,7 @@ nav{
 } */
 
 .card-btn {
-    background-color: var(--light-orange);
+    background-color: var(--orange);
     color: var(--white);
 }
 
@@ -429,7 +429,7 @@ nav{
 
 button, .submit-btn,
 .social-link {
-    background-color: var(--light-orange);
+    background-color: var(--orange);
     color: var(--white);
     outline: none;
     border: none;
@@ -701,6 +701,10 @@ iframe {
 .project-title p {
     letter-spacing: 1.5px;
     color: var(--black);
+}
+
+.project-title h3 {
+    color: var(--orange);
 }
 
 .project h2 {
