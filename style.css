@@ -992,6 +992,7 @@ iframe {
     box-shadow: 0 0 8px 1px var(--grey);
 }
 
+
 .cs-img-small {
     width: 40%;
 }
@@ -1032,6 +1033,10 @@ iframe {
 .cs-description {
     display: flex;
     justify-content: space-around;
+}
+
+.ss-img {
+    margin-bottom: 4em;
 }
 
 
