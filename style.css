@@ -1012,6 +1012,7 @@ iframe {
     display: flex;
     justify-content: space-around;
     padding: 0;
+    list-style: none;
 }
 
 .cs-list,
@@ -1022,7 +1023,7 @@ iframe {
 .cs-list li {
     margin: 1em;
     padding: 0;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .cs-container {
