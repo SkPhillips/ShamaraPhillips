@@ -113,6 +113,12 @@ p {
 
 .arrow{
     width: 50px;
+    vertical-align: middle;
+}
+
+.arrow-back{
+    width: 28px;
+    margin-right: .2em;
 }
 
 span {
