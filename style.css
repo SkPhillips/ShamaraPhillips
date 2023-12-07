@@ -70,6 +70,12 @@ main {
     letter-spacing: 1.2px;
 }
 
+.t-logo {
+    position: relative;
+    right: 1em;
+    width: 100px;
+}
+
 .burger {
     margin: .8em 1em;
     float: right;
@@ -121,15 +127,6 @@ p {
     margin-right: .2em;
 }
 
-span {
-    color: var(--orange);
-}
-
-.span2 {
-    color: #aaa4a4;
-    font-weight: 600;
-}
-
 
 .percentage {
     color: #c1abab;
@@ -166,6 +163,27 @@ a {
     text-decoration: none;
 }
 
+
+span {
+    color: var(--orange);
+}
+
+.span2 {
+    color: #aaa4a4;
+    font-weight: 600;
+}
+
+.span3 {
+    color: #7566d2;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.span4 {
+    color: var(---black);
+    font-size: 1.2rem;
+}
+
 hr {
     background-color: var(--grey);
     height: .3em;
@@ -173,6 +191,7 @@ hr {
     margin-bottom: 0;
     max-width: 90%;
 }
+
 
 #about {
     visibility: hidden;
@@ -185,6 +204,11 @@ hr {
 
 img {
     width: 300px;
+}
+
+.profile {
+    border: solid 10px var(--white);
+    
 }
 
 label {
@@ -210,7 +234,6 @@ nav{
     display: flex;
     justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 .nav-links li {
@@ -670,9 +693,10 @@ button:focus {
 
 
 iframe {
-    border-radius: 20px;
+    /* border-radius: 20px; */
     border: solid 1px rgb(220, 218, 220);
     margin: 0 auto;
+    width: 100%;
 }
 
 
@@ -996,6 +1020,10 @@ iframe {
     padding: .5em;
     background-color: var(--white);
     box-shadow: 0 0 8px 1px var(--grey);
+}
+
+.cs-img-t {
+    margin-bottom: 4em;
 }
 
 
@@ -1492,4 +1520,12 @@ footer {
     .intro-para {
         margin-top: 15em;
     }
+}
+
+.margin-more{
+    margin-bottom: 10em;
+}
+
+.margin-top {
+    margin-top: 0em;
 }
