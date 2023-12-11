@@ -48,22 +48,26 @@
         </div>
     </nav>
 
-    <!--Section  (intro illustration) -->
-    <main class="cs-main">
+    <main>
+        <div class="cs-cover"> </div>
 
+<div class="cs-main cs-taltrics" >
             <img class="t-logo" src="images/t/logo.png"> 
-        <!--video-->
         <div class="intro-container">
 
             <div class="cs-container">
-                
+                <div> 
                 <span>
-                <h2 class="cs-title">Taltrics Web Application</h2>
+                <h2 class="cs-title large-font">Taltrics</h2>
                 </span>
+                <h3 class="span"> Modern Resource Management Web Application </h3>
+            </div>
+
                 <p class="cs-summary">
-                Over an intensive 8-week sprint, I undertook comprehensive research and design efforts for this multifaceted web application focusing on resource allocation.  
-                My role centered on conducting user interviews, usability testing and rapid prototyping refining the app's interface and functionality based on feedback. 
-                The process culminated in a meticulously designed solution ready for investors.
+                    Over an intensive 8-week sprint, I conducted comprehensive research and design efforts for this complex web application, 
+                    with a focus on resource allocation. My role involved conducting user interviews, usability testing, and rapid prototyping 
+                    to refine the app's interface and functionality based on feedback. This process culminated in a modern design solution 
+                    that is now ready for investors.
                 </p>
             </div>
 
@@ -90,141 +94,285 @@
                 </ul>
             </div>
         </div> <!--end intro container-->
- 
-        <div>
-            <h2>THE PROBLEM</h2>
-                
-                <p>
-                    Today, resource allocation is inefficient. 
-                    It lacks real-time data support and is typically managed in a room where managers discuss and move people around on a spreadsheet. 
-                    This inefficiency can result in increased operational costs and project delays.
-                </p>
-                <br>
-                <h2>THE PROJECT</h2>
-                
-                <p>
-                    Create a low-fidelity wireframe to revamp Taltrics' current resource allocation beta interface.
-                </p>
-                <br>
-                
-                <h3 class="cs-title">Beta - Resource Allocation</h3>
-                <img class="cs-img cs-img-t" src="images/t/beta.png" alt="beta image">
-        </div>
-
-        <div class="cs-section">
+        
+    <!--problem statement-->
+         <div class="cs-problem">
             <div>
-                <h2>MAIN USER STORIES </h2>
-                    <p>
-                        The project centered around two primary user stories:
-            Displaying supply and demand onto one interface, and 
-            incorporating AI recommendations into the workflow.   
-                    </p>
-                    <br>
+            <h2> Business leaders need to allocate.</h2>
+            
+            <div class="cs-problem-container">
+                <div class="cs-problem-column1">
+                <h3>Problem Statment</h3>
+                            <p>
+                                Today, resource allocation is inefficient. 
+                                It lacks real-time data support and is typically managed in a room where managers make decisions around on a spreadsheet. 
+                                This inefficiency can result in increased operational costs and project delays.
+                            </p>
+               <h3>Project Scope</h3>
+                            <p>
+                            Create a low-fidelity wireframe to revamp Taltrics' current resource allocation beta interface.
+                            </p>
+                </div>
+
+               <div> <img src="images/t/user-stories.png" alt="user stories img" />
+               </div>
             </div>
             
-            <h3 class="cs-title">Main User Stories</h3>
-            <img class="cs-img" src="images/t/user-stories.png" alt="user stories image">
         </div>
-   
+                        
+                </div> <!--end problem statement-->
 
-        <div>
-            <h2>USER INTERVIEWS </h2>
+<!--section--> 
+            <div class="">
+                <h2 class="large-font"> Design Thinking Process</h2>
+                <img class="cs-img cs-img-process" src="images/t/design-process.png" />
+            </div>
+
+<!--section - empathize--> 
+        <div class="cs-main cs-process">
+            <div class="border-container">
+            <h2> 1</h2>
+            <h2 class="span4 border-top">EMPATHIZE</h2>
+            <div>
+            <h3>Understanding user's viewpoints</h3>
+            <h4>User Interviews</h4>
+                <p> Once the product requirements were examined from the client's perspective, it was time to directly engage with the users.
+                    Since our product's users are business leaders with tight schedules, navigating their availability presented challenges. 
+                    Our project plan was designed to foresee and adapt to these hurdles, ensuring we could handle their potential impact.
+                    Over a span of three weeks, we successfully interviewed four business leaders. Despite the limited number of interviews, 
+                    the insights gained were incredibly valuable and played a pivotal role in the success of our product.
+                </p>
+                <img class="cs-img cs-img-process cs-img-small" src="images/t/interview-img.png" alt="user interview illutration">
+        </div>
+
+        <!--interview guide accordion (part of empathize section)--> 
+        <section class="accordion">
+            </div>
+            <div class="tab">
+              <input type="checkbox" name="accordion-1" id="cb2">
+              <label for="cb2" class="tab__label">Interview Guide</label>
+              <div class="tab__content">
                 <p>
-                    With our product's users being business leaders, scheduling their time posed challenges. 
-                    Our project plan anticipated these challenges and accommodated their potential impact.
-                    The weekly user interviews yielded valuable insights that played a crucial role in our product's success.
+                    <b>Understanding the Current Workflow</b>
+                    <ul>
+                    <li>When it comes to resource allocation, what are your daily responsibilities?</li>
+                    <li>Can you share an example of a recent resource allocation decision you made?</li>
+                    <li>What specific information is crucial for making resource allocation decisions?</li>
+                    <li>Walk me through the steps you take to allocate someone to a requirement.</li>
+                    <li>What are the constraints or limitations affecting your decisions?</li>
+                    </ul>
+
+                    <b>Tools and Software</b>
+                    <ul>
+                    <li>Are you currently using any software/tools for resource allocation decisions?</li>
+                    <li>What do you LIKE about your current tools?</li>
+                    <li>What do you DISLIKE about your current tools?</li>
+                    </ul>
+
+                    <b>Desired Features</b>
+                    <ul>
+                    <li>Preferred data visualization techniques (charts, graphs, tables, etc.)</li>
+                    <li>The most important information you want to see first?</li>
+                    <li>Visual cues for easier assessment and allocation of candidates to teams?</li>
+                    </ul>
+
+                    <b>Unique Platform Features</b>
+                    <ul>
+                    <li>Features or functionalities that would make an ideal team allocation platform?</li>
+                    <li>Preferred data presentation and visualization for decision-making?</li>
+                    <li>Additional aspects about resource allocation needs to share?</li>
+                    </ul>
+
+                    <b>Assisted AI</b>
+                    <ul>
+                    <li>Experience with the current Applicant Tracking System (ATS)?</li>
+                    <li>Suggestions for ATS improvement?</li>
+                    </ul>
+
+                    <b>AI-Driven Dashboard</b>
+                    <ul>
+                    <li>Expectations about how a dashboard could improve your workflow?</li>
+                    <li>Specific tasks or decisions you want the dashboard to assist with?</li>
+                    </ul>
+
+                    <b>AI Recommendation System</b>
+                    <ul>
+                    <li>Integration expectations of an AI recommendation system into your workflow?</li>
+                    <li>Expected features or capabilities of an AI-powered recommendation system?</li>
+                    </ul>
+
+                    <b>Customization and Feedback</b>
+                    <ul>
+                    <li>Importance of providing feedback on AI's recommendations?</li>
+                    <li>Preferred method for providing feedback?</li>
+                    </ul>
+                </p>
+
+              </div>
+            </div>
+          </section> <!--end interview guide accordion--> 
+          
+        </div><!--section - empathize-->  
+
+<!--section - define--> 
+        <div class="cs-main cs-process">
+            <div class="border-container">
+                <h2> 2</h2>
+            <h2 class="span4 border-top-2">DEFINE</h2>
+            </div>
+            <h3>Unraveling the concept</h3>
+                <h4>Affinity Mapping</h4>
+                <p> 
+                    With our collated notes, transcripts, and recordings, we synthesized our findings into insights through the application of affinity mapping.
+                </p>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpSOMgRg89229IUjUHQYW9Q%2FTaltrics%253A-Research-Synthesis%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DLrbilobGGDxBPNQF-1" allowfullscreen></iframe>
+
+        </div><!--end section - define--> 
+
+<!--section - ideate--> 
+            <div class="cs-main cs-process">
+                <div class="border-container">
+                    <h2> 3</h2>
+                <h2 class="span4 border-top-3">IDEATE</h2>
+                <div>
+                <h3>Generating creative solutions</h3>
+                <h4>Design Iterations</h4>
+                    <p> Based on our current data and an analysis on web application layouts I made the executive decision to introduce a 3-column 
+                        layout that showcases the primary user story requirements and a drag & drop user flow that's easily understandable and learnable.
+                        From there it was iterating and ideating concept after concept to solve for our user problems as more research was gathered. 
+                    </p>
+                    </div>
+                </div>
+            
+                    <!--carousel 9 part of section - ideate--> 
+                <div class="carousel">
+                    <div class="carousel-item carousel-item-visible">
+                        <img class="carousel-img" src="images/t/wireframe-1.png" alt="wireframe 1 img" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="images/t/wireframe-2.png" alt="wireframe 2 img" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="images/t/wireframe-3.png" alt="wireframe 3 img" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="images/t/wireframe-3+.png" alt="wireframe 3+ img" />
+                    </div>
                     
-                </p>
-        </div>
-        
+                    <div class="carousel-actions">
+                        <button class="carousel-btn carousel-btn-left" id="carousel-button-prev"
+                            aria-label="Previous slide">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-btn-right" id="carousel-button-next" aria-label="Next slide">
+                            <i class="fas fa-chevron-right"></i> </button>
+                </div>
+                </div> <!-- endcarousel--> 
 
+            </div> <!--end section - ideate--> 
 
-        <div class="cs-section">
-            <h3 class="cs-title">Interview Findings - Affinity Map</h3>
-            <img class="cs-img cs-img-t" src="images/t/amap.png" alt="affinity map image">
-            <p></p>
-        </div>
+<!--section - prototype--> 
+        <div class="cs-main cs-process">
+            <div class="border-container">
+                <h2> 4</h2>
+            <h2 class="span4 border-top-4">PROTOTYPE</h2>
+            </div>
+            <h3>Bringing the concept to life </h3>
+            <h4>Rapid Iterations</h4>
+                <p> Now the fun part, I tackled this phase implementing a rapid, iterative approach. From the first wireframe moving forward I 
+                    created multiple versions of prototypes to explore different solutions and variations. This iterative process helped communicate with stateholders, uncovering flaws, 
+                    validating assumptions, and refining the concept based on user feedback. Upon completing Version 2 we were ready to test with users.
+                    <a class="span3" href="https://www.figma.com/proto/4C1d7mhNZ6ZwV9xqEW3GCp/Dream-Team-%2F-Taltrics?type=design&node-id=256-16742&t=pgW2x4zOE1tqHx2u-1&scaling=min-zoom&page-id=224%3A50083&mode=design" target="blank" > Visit V2 Prototype </a>
+                    <div class="cs-section">
+                        <h4>V2 - Prototype</h4>
+                        <div class="cs-video-container margin-top">
+                            <iframe class="cs-video" src="https://www.youtube.com/embed/tTRM9L3c4aA?autoplay=1&loop=1&playlist=tTRM9L3c4aA" frameborder="0" allowfullscreen allow="autoplay">
+                            </iframe>>
+                            
+                        </div>   
+                    </div> 
+                </div> <!--end section- prototype--> 
 
-        <div>
-            <h2>DESIGN ITERATIONS</h2>
-                
-                <p>    
-                As an executive decision, I chose to introduce a 3-column 
-                layout that showcases the primary user story requirements and a drag & drop user flow that's easily understandable and learnable.
-                As more research was gathered, the design iterations showed a continuous improvement.
-                </p>
-        </div>
-
-        <div class="cs-section">
-            <h3 class="cs-title">Wireframe 1</h3>
-            <img class="cs-img" src="images/t/V1.png" alt="Wireframe 1 image">
-            <h3 class="cs-title">User Feedback</h3>
-            <img class="cs-img" src="images/t/insights.png" alt="User insights image">
-            <h3 class="cs-title">Wireframe 2</h3>
-            <img class="cs-img" src="images/t/v2.png" alt="Wireframe 2 image">
-        </div>
-
-        <div class="margin-more">
-            <br>
-            <h2>USABILITY TESTING</h2>
-                <p>
-                    With the prototype ready it was time to test.  
-                    Because Taltrics' users are executives, they had very little time to spare to collect data. 
-                    To pivot, our team opted for an unmoderated remote usability test on the prototype, utilizing Maze.
-                    (Test for portfolio purposes only; no data collection) <a class="span3" href="https://app.maze.co/maze-preview/mazes/199104680" target="_blank"> View Test </a>  
-        </div>
-
-        <div class="cs-section">
-            <h2>FINAL HANDOFF</h2>
+<!--section - test--> 
+                    <div class="cs-main cs-process">
+                        <div class="border-container">
+                            <h2> 5</h2>
+                        <h2 class="span4 border-top-5">TEST</h2>
+                        </div>
+                        <div>
+                        <h3>Optimizing user experience & plan pivoting</h3>
+                        <h4>Usability Testing</h4>
+                            <p>    
+                                Our initial plan was to conduct a moderated test via virtual meeting, but because Taltrics' users are executives, 
+                                their tight schedules rendered them unavailable for meetings. To pivot, our team opted for an unmoderated remote usability test, utilizing Maze.
+                                Two participants were able to engage, and the insights collected enabled us to iteratively refine and optimize our design.
+                                (Test for portfolio purposes only; no data collection) <a class="span3" href="https://app.maze.co/maze-preview/mazes/199104680" target="_blank"> Check out V2 Usability Test </a>  
+                            </p>
+                        <div class="cs-section">
+                            <h4>Moderated Test Plan</h4>
+                            <img class="cs-img cs-img-process" src="images/t/usability-plan.png" alt="user interview illutration">
+                        </div>
+                        </div> 
+                        <div class="cs-section">
+                            <h4>Research Synthesis</h4>
+                            <img class="cs-img cs-img-process" src="images/t/usability-insights.png" alt="user interview illutration">
+                        </div>
+                                </div> 
+                    </div> <!--end section - test--> 
+                    
+        <div class="cs-main cs-final">
+                    <h2> The Final Handoff </h2>
                 <p>    
                     Prototype testing yielded valuable input, yet we faced a development constraint with the carousel. 
-                    However, this constraint became an opportunity, prompting us to craft a sleeker redesign in this latest version. 
-                    <a class="span3" href="https://www.figma.com/file/eDVeeJxinH7P4rDquDm37F/Untitled?type=design&node-id=0%3A1&mode=design&t=x7Y2oFx3GjgPtBK8-1" target="_blank">
-                        Full Annotation: Figma File
-                    </a>
-                </p>
+                    However, this constraint led to a positive outcome, prompting us to craft a sleeker redesign in this latest version. </p>
+                <div class="cs-section">
+                <h4>Opening a Requisition</h4>
+                <div class="cs-video-container margin-top">
+                      <iframe class="cs-video" src="https://www.youtube.com/embed/9byiLJtOtnY?autoplay=1&loop=1&playlist=9byiLJtOtnY" frameborder="0" allowfullscreen allow="autoplay">
+                      </iframe>
+                    </div>
+                      
+                </div>
+                <h4>Opening a Profile</h4>
+                <div class="cs-video-container margin-top">
+                      <iframe class="cs-video" src="https://www.youtube.com/embed/oHsn_-raySQ?autoplay=1&loop=1&playlist=oHsn_-raySQ" frameborder="0" allowfullscreen allow="autoplay">
+                      </iframe>
+                </div>
+
+                <a class="span3" href="https://www.figma.com/file/eDVeeJxinH7P4rDquDm37F/Untitled?type=design&node-id=0%3A1&mode=design&t=x7Y2oFx3GjgPtBK8-1" target="_blank">
+                    Full Annotation: Figma File
+                </a>
+            
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FeDVeeJxinH7P4rDquDm37F%2FTaltrics-Handoff-Annotation%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DLrbilobGGDxBPNQF-1" allowfullscreen>
+            </iframe>
         </div>
 
-        <div class="cs-section">
-            <h3 class="cs-title">Opening a Requisition</h3>
-            <div class="cs-video-container margin-top">
-                <iframe class="cs-video" src="https://www.youtube.com/embed/9byiLJtOtnY?autoplay=1&loop=1&playlist=9byiLJtOtnY" frameborder="0" allowfullscreen allow="autoplay">
-                </iframe>
-                
-        </div> 
-        
 
-        <h3 class="cs-title">Opening a Profile</h3>
-        <div class="cs-video-container margin-top">
-              <iframe class="cs-video" src="https://www.youtube.com/embed/oHsn_-raySQ?autoplay=1&loop=1&playlist=oHsn_-raySQ" frameborder="0" allowfullscreen allow="autoplay">
-              </iframe>
-        </div>
-
-        </div>
-
-
-        <div>
-            <h2>ACHIEVEMENTS</h2>
-                
-                <p>
-                    Thanks to thorough and effective research, paired with sound design decisions and 
-                    my proficiency in rapid prototyping, our team outpaced the schedule. 
-                    By week 5, the client presented the design to investors, and by week 6, 
-                    our design team collaborated with the engineer to construct the prototype within a sandbox environment.
-                </p>
+        <div class="cs-main cs-final">
+            <h2>Achievments</h2>
+                 <ul>
+                    <li><b>Overall:</b> Provided strong research, sound design choices, and efficient rapid prototyping skills.
+                    </li>
+                    <li><b>Week 3:</b> Delivered a successful mid-fi prototype instead of a lo-fi wireframe.
+                    </li>
+                    <li><b>Week 5:</b> The client presented the design to investors.
+                    </li>
+                    <li><b>Week 6:</b> Our design team worked with engineers to adapt the prototype within a sandbox.
+                    </li>
+                </ul>
                  <img class="cs-img" src="images/t/quote.png" alt="founder's quote image">
                 <br>
         </div>
 
         
 
-        <div class="cs-section cs-section-end cs-section1-end">
+        <div class="cs-main cs-section-end cs-section1-end">
             
-            <p>CLOSING</p>
+            <h3>CLOSING</h3>
  
-            <p> Navigating through the challenges of this project was demanding, yet undeniably fulfilling.
-                Simplifying the products complexity through design was an enjoyable and rewarding journey. 
-                Thank you for exploring this UX project with me. 
+            <p> Thank you for exploring this UX project with me.
+                Navigating through the challenges of this project was demanding, yet undeniably fulfilling.
+                Simplifying the products complexity through design was an enjoyable and rewarding journey.  
                 If you have any questions or would like to discuss further, I'd love to connect.
             </p>
         </div>
