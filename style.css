@@ -15,6 +15,7 @@
     --blue: #24ACDE;
     --light-blue: #e9f8ff;
     --dark-blue: #004c8a;
+    ---video-blue: #c3e3fa;
   }
 
 
@@ -200,12 +201,14 @@ span {
 }
 
 hr {
-    background-color: var(--blue);
-    height: .1em;
+    /* background-color: var(--dark-blue); */
+    height: .2em;
     border: none;
-    margin-bottom: 0;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 62%;
+    border-top: 4px dashed var(--dark-blue);
 }
+
 
 
 #about {
@@ -624,7 +627,7 @@ button:focus {
 
 
 .carousel {
-    /* max-width: 620px; */
+    max-width: 1200px;
     position: relative;
     margin: 2em auto 8em auto;
 }
@@ -664,11 +667,9 @@ button:focus {
 
 
 .carousel .carousel-item img {
-    width: 100%;
+    width: 120%;
     /* max-width: 620px; */
     height: auto;
-    border-radius: 2px;
-    box-shadow: 0px 2px 5px 0px var(--dark-grey);
 
 }
 
@@ -705,13 +706,13 @@ button:focus {
 }
 
 .carousel .carousel-actions .carousel-btn#carousel-button-next {
-    margin-right: 20px;
+    margin-right: 155px;
 } 
 
 
 iframe {
     /* border-radius: 20px; */
-    border: solid 1px rgb(220, 218, 220);
+    border: solid 1px var(--grey);
     margin: 0 auto;
     width: 100%;
 }
@@ -1067,14 +1068,19 @@ iframe {
     margin: 4em auto;
 }
 
-.cs-problem {
+.cs-problem .cs-learn {
     margin: 0;
     padding: 0;
     padding-bottom: 1em;
 }
 
-.cs-problem h2, .cs-final h2 {
+.cs-problem h2, .cs-final h2 , .cs-learn h2 {
     text-align: center;
+}
+
+.cs-final h2 {
+    margin-top: 2em;
+    text-align: left;
 }
 
 .cs-final li::before {
@@ -1091,20 +1097,79 @@ iframe {
     list-style: none;
 }
 
+.iframe-border {
+    padding: 4px;
+    background-color: var(--dark-blue);
+}
 
-.cs-problem h3 {
+.cs-steps, .cs-learn-points{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--dark-blue);
+    margin-top: 0;
+    
+}
+
+.cs-final h3{
+    text-align: center;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    padding-top: 1em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0px 0px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding-left: 1em; 
+    
+}
+
+.cs-step {
+    margin: 1em;
+    text-align: center;
+    color: var(--white);
+}
+
+.cs-step svg, .cs-learn-container svg {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: .4em;
+    transform: scale(.9);
+}
+
+.cs-learn-container svg{
+    padding-top: 4em;
+}
+
+
+.cs-step p {
+    color: black;
+    background-color: var(--white);
+    padding: .5em;
+    border-radius: 10px;
+    filter: drop-shadow(0px 2px 3px #363636);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.cs-problem h3 , .cs-learn h3 {
     margin-bottom: 0;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.cs-problem-container{
-    /* border: solid 4px var(--blue);
-    background-color: var(--light-blue); */
-    padding: 2em;
-    border-radius: 20px;
-    display: flex;
+.cs-learn p {
+    margin-top: .5em;
 }
+.cs-step h4 {
+    font-weight: 400;
+}
+
 
 .cs-problem img {
     width: 400px;
@@ -1115,6 +1180,10 @@ iframe {
     margin-right: 6em;
     font-size: 1.3rem;
 }
+
+/* .cs-learn-column-2 {
+    margin-left: 6em;
+} */
 
 
 .cs-problem :nth-child(3){
@@ -1218,6 +1287,7 @@ iframe {
 .ss-img {
     margin-bottom: 4em;
 }
+
 
   
   /* ------ ACCORDION ------ */
@@ -1575,6 +1645,20 @@ footer {
     .wireframes h3 {
         margin-top: 2.5em;
     }
+
+    .cs-steps {
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+
+    .cs-problem-container, .cs-learn-container {
+        display: flex;
+        padding: 2em;
+    }
+
+   
     
 }
 
@@ -1634,6 +1718,8 @@ footer {
         margin-right: 2em;
     }
 
+    
+
 }
 
 @media (min-width: 1080px){
@@ -1641,11 +1727,17 @@ footer {
     .main-title {
         height: 500px;
     }
+
 }
+
 
 @media (min-width: 1300px){
     .main-title {
         height: 600px;
+    }
+
+    .cs-learn-column-2 {
+        margin-left: 6em;
     }
 }
 
@@ -1686,6 +1778,8 @@ footer {
     .about-header {
         font-size: 1.6rem;
     }
+
+    
 
 }
 
