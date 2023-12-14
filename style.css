@@ -627,7 +627,7 @@ button:focus {
 
 
 .carousel {
-    max-width: 1200px;
+    max-width: 1500px;
     position: relative;
     margin: 2em auto 8em auto;
 }
@@ -667,10 +667,12 @@ button:focus {
 
 
 .carousel .carousel-item img {
-    width: 120%;
+    width: 100%;
     /* max-width: 620px; */
     height: auto;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel .carousel-actions {
@@ -685,6 +687,7 @@ button:focus {
 .carousel-btn {
     background-color: var(--blue);
     font-size: 1.2rem;
+    margin-top: 2em;
 }
 
 .carousel-btn:focus {
@@ -703,10 +706,11 @@ button:focus {
 
 .carousel .carousel-actions .carousel-btn#carousel-button-prev {
     margin-left: 20px;
+    margin-right: 50%;
 }
 
 .carousel .carousel-actions .carousel-btn#carousel-button-next {
-    margin-right: 155px;
+    margin-right: 50%;
 } 
 
 
@@ -1460,6 +1464,7 @@ footer {
 /**** Media Queries ****/
 
 
+
 @media (min-width: 510px) {
 
     /* .projects{
@@ -1467,6 +1472,7 @@ footer {
     } */
 
 }
+
 
 
 @media (min-width: 700px) {
@@ -1585,6 +1591,7 @@ footer {
     .wireframes h3 {
         margin-top: 2.5em;
     }
+
 }
 
 /* @media (min-width: 850px){
@@ -1657,9 +1664,13 @@ footer {
         display: flex;
         padding: 2em;
     }
-
    
-    
+}
+
+@media (min-width: 900px) {
+    .carousel .carousel-actions .carousel-btn#carousel-button-next {
+        margin-right: 17em;
+    } 
 }
 
 
